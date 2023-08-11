@@ -2,7 +2,7 @@ import React from "react";
 import { BsCart3, BsGrid1X2Fill, BsFillArchiveFill,
   BsPeopleFill, BsListCheck, BsMenuButtonWideFill, BsFillGearFill} 
  from 'react-icons/bs';
-import { MdPointOfSale } from 'react-icons/md'
+import { MdPointOfSale, MdForklift } from 'react-icons/md'
 import { VscSignOut } from 'react-icons/vsc';
 import { signOut } from "firebase/auth";
 import { auth } from "../../src/firebase";
@@ -22,7 +22,7 @@ const Sidebar = () =>{
         <aside id="sidebar">
             <div className="sidebar-title">
                 <div className="sidebar-brand">
-                    <img src="../Components/retailLogo.jpeg" className="icon_header" alt=""/> RETAIL
+                    <MdForklift className="icon_header"/> RETAIL
                 </div>
             </div>
 
@@ -58,13 +58,13 @@ const Sidebar = () =>{
                     </a>
                 </li>
                 <li className="sidebar-list-item">
-                    <a href="">
-                        <BsFillGearFill className='icon'/> Ajustes
+                    <a href="/ventas">
+                        <MdPointOfSale className='icon'/> Ventas
                     </a>
                 </li>
                 <li className="sidebar-list-item">
                     <a href="">
-                        <MdPointOfSale className='icon'/> Ventas
+                        <BsFillGearFill className='icon'/> Ajustes
                     </a>
                 </li>
                 <li className="sidebar-list-signout">

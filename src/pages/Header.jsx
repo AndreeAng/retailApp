@@ -17,7 +17,7 @@ function Header () {
             <div className="header-right">
                 <BsFillBellFill className="icon" />
                 <BsFillEnvelopeFill className="icon" />
-                <a href="/crearUsuario" className="header-link"><BsPersonCircle className="icon" /></a>
+                <a href="/perfil" className="header-link"><BsPersonCircle className="icon" /></a>
             </div>
         </header>
     );

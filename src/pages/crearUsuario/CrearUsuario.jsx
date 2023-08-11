@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../login/Login.css';
+import './crearUsuario.css';
 
 export const CrearUsuario = () => {
     const[email, setEmail] = useState('');
@@ -20,7 +20,7 @@ export const CrearUsuario = () => {
 
  return (
     <div className="auth-form-container">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="crearUsuario-form">
             <label htmlFor="nombre">Nombre Completo: </label>
             <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Nombre Completo" id="nombre" name="nombre"></input>
             <label htmlFor="email">Email: </label>
