@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import './crearUsuario.css';
+import { collection, addDoc, serverTimestamp, Timestamp } from "firebase/firestore";
+import { db, auth } from "../../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export const CrearUsuario = () => {
     const[email, setEmail] = useState('');
@@ -9,6 +12,22 @@ export const CrearUsuario = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        createUserWithEmailAndPassword(auth, email, password)
+            .then ((userCredential) => {
+                console.log(userCredential);
+            })
+            .catch((error) => {
+                console.error(error);
+            })
+        if(email && password && name && nivelAcceso) {
+            addDoc(collection(db, "usuarios"), {
+                name: name,
+                email: email,
+                password: password,
+                nivelAcceso: nivelAcceso,
+                timestamp : serverTimestamp()
+            })
+        }
         console.log
             (`
                 Name: ${name}
@@ -33,7 +52,7 @@ export const CrearUsuario = () => {
                 <option value="1">Operador</option>
                 <option selected value="2">Vendedor</option>
             </select>
-        <button type="submit">Registrar</button>
+        <button type="submit" id="sighUp" name="signup_submit" value="Sign Up">Registrar</button>
         </form>
     </div>
  )

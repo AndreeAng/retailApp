@@ -9,6 +9,7 @@ import Sidebar from './pages/Sidebar';
 import { Outlet } from 'react-router-dom';
 import Profile from './pages/profile/Profile';
 import Ventas from './pages/ventas/Ventas';
+import Clientes from './pages/clientes/Clientes';
 
 const SidebarLayout = () => (
     <>
@@ -31,6 +32,7 @@ function App() {
               <Route path='/crearUsuario' element={<CrearUsuario/>}></Route>
               <Route path='/perfil' element={<Profile/>}></Route>
               <Route path='/ventas' element={<Ventas/>}></Route>
+              <Route path='/clientes' element={<Clientes />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>

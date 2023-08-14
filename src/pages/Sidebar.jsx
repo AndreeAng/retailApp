@@ -33,17 +33,17 @@ const Sidebar = () =>{
                     </a>
                 </li>
                 <li className="sidebar-list-item">
-                    <a href="">
+                    <a href="/productos">
                         <BsFillArchiveFill className='icon'/> Productos
                     </a>
                 </li>
                 <li className="sidebar-list-item">
-                    <a href="">
+                    <a href="/compras">
                         <BsCart3 className='icon'/> Compras
                     </a>
                 </li>
                 <li className="sidebar-list-item">
-                    <a href="">
+                    <a href="/clientes">
                         <BsPeopleFill className='icon'/> Clientes
                     </a>
                 </li>
@@ -53,7 +53,7 @@ const Sidebar = () =>{
                     </a>
                 </li>
                 <li className="sidebar-list-item">
-                    <a href="">
+                    <a href="/reportes">
                         <BsMenuButtonWideFill className='icon'/> Reportes
                     </a>
                 </li>
@@ -63,7 +63,7 @@ const Sidebar = () =>{
                     </a>
                 </li>
                 <li className="sidebar-list-item">
-                    <a href="">
+                    <a href="ajustes">
                         <BsFillGearFill className='icon'/> Ajustes
                     </a>
                 </li>
