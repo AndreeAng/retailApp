@@ -10,6 +10,7 @@ import { Outlet } from 'react-router-dom';
 import Profile from './pages/profile/Profile';
 import Ventas from './pages/ventas/Ventas';
 import Clientes from './pages/clientes/Clientes';
+import Inventario from './pages/inventario/Inventario';
 
 const SidebarLayout = () => (
     <>
@@ -33,6 +34,7 @@ function App() {
               <Route path='/perfil' element={<Profile/>}></Route>
               <Route path='/ventas' element={<Ventas/>}></Route>
               <Route path='/clientes' element={<Clientes />}></Route>
+              <Route path='/inventario' element={<Inventario />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>

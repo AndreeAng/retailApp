@@ -38,7 +38,6 @@ export const Login = () => {
 
     return (
         <div class="auth-form-container" onLoad={goHome}>
-            <h2 className="login-title">Login</h2>
             <form className="login-form" onSubmit={signIn}>
                 <label htmlFor="email">Email:</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type='email' placeholder="Email" id="email" name="email"/>

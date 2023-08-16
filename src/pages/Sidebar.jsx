@@ -48,7 +48,7 @@ const Sidebar = () =>{
                     </a>
                 </li>
                 <li className="sidebar-list-item">
-                    <a href="">
+                    <a href="/inventario">
                         <BsListCheck className='icon'/> Inventario
                     </a>
                 </li>
